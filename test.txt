@@ -1,8 +1,0 @@
-(function($){
-  $.fn.myfirstP =function(){
-    this.fadeOut();
-  }
-})(JQuery);
-
-Yoyo你这个渔民在这乱跳 不知道逻辑是不是有点爆掉
-我这个警察本想默默不语  如今你却要逼我现行

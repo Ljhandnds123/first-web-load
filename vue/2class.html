@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>class style</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <style>
+      .static{
+       color:green;
+  }
+      .active{
+         color:red;
+  }
+      .one{
+       background-color:yellow;
+  }
+      .two{
+       font-size:20px;
+  }
+     
+    </style>
+  </head>
+
+  <body>
+   
+   <div id="app">
+      <div class="static" :class="{active:isActive}">value :class={active:isActive}</div>
+      <div class="static" :class="classObject">computed :class="classObject"</div>
+      <div class="static" :class="[one,two]">array :class="[one,two]"</div>
+      <div class="static" :style="{color:color,fontSize:fontSize +'px'}">style :style="{color:color,fontSize:fontSize +'px'} "   style 也可以用对象 和数组 （这个用的是属性）:style="{ display: ['-webkit-box', '-ms-flexbox', 'flex'] }" 多重值</div>
+   </div>   
+   
+
+   <script src="2.js"></script>
+  </body>
+</html>

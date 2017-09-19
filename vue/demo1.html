@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>hello vue</title>
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+   
+  </head>
+  <body>
+     <div id="app">
+     <liu-item v-bind:today="helloq"></liu-item>
+     {{ helloq }}
+      <div v-for="it in student"> {{it.name + ' '+ it.age}}</div>
+      <div v-html="html" v-once></div>
+      <input type="text" v-model="haha">
+       {{answer}}
+     </div>
+  <script src="1.js"></script>
+  </body>
+</html>

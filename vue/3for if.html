@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>for if demo</title> 
+    <script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+    <style>
+    </style>
+  </head>
+  <body>
+   <div id="app">
+     <h1 v-if="Math.random()>0.5">>0.5</h1>
+     <h1 v-else><0.5</h1>
+
+     <template v-if="loginType === 'username'">
+       <label>Username</label>
+       <input placeholder="Enter your username">
+     </template>
+     <template v-else>
+       <label>Email</label>
+       <input placeholder="Enter your email address">
+     </template> <button @click="keke">bianhuan</button>
+
+     <template v-if="loginType === 'username'">
+       <label>Username</label>
+       <input placeholder="Enter your username" key='username-input'>
+     </template>
+     <template v-else>
+       <label>Email</label>
+     <input placeholder="Enter your email address" key="email-input">
+     </template> <button @click="keke">bianhuan</button>
+   </div>
+  
+  <script src="3.js"></script>
+</html>

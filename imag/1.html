@@ -1,0 +1,63 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+     <title>lunbo</title>
+     <script src=¡±http://libs.baidu.com/jquery/2.1.1/jquery.min.js¡±></script>
+  </head>
+  <body>
+     <style>
+       #photo{
+         width:400px;
+         height:300px;
+         border:solid 1px;
+         position:relative;
+}
+      #photo img{
+         width:400px;
+         height:auto;
+}
+      #photo ul{
+        list-style:none;
+        position:absolute;
+        right:30px;
+        bottom:10px;
+ 
+}
+      #photo ul li{
+        float:left;
+        
+
+}
+      #photo ul li a {
+         text-decoration:none;
+         
+}
+     </style>
+     <script>
+        $(document).ready(function(){
+     $('#1').click(function(){
+         $('#img').style('src','2.jpg');
+  
+});   
+           $('#2').click(function(){
+         $('#img').style('src','3.jpg');
+});
+           $('#3').click(function(){
+         $('#img').style('src','4.jpg');
+});
+});          
+
+
+
+     </script>
+     <div id="photo">
+          <img id="img" src="2.jpg" >
+          <ul>
+             <li><a href="#" id="1">1</a></li>
+             <li><a href="#" id="2">2</a></li>
+             <li><a href="#" id="3">3</a></li>
+          </ul>
+     </div>
+
+  </body>
+</html>
